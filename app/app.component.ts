@@ -2,15 +2,16 @@ import {Component} from '@angular/core'
 
 @Component({
   selector:"myapp",
-  template:`<div>{{name}}</div>`
+  templateUrl:'app/app.component.html',
+  styleUrls:['app/app.component.css']
   
 })
 
-export class TitleComponent{ 
+export class AppComponent{ 
   
-  name:string;
+  projectName:string;
   constructor()
   {
-     this.name="Hello World !!";
+     this.projectName="Hello World !!";
   }
 }
